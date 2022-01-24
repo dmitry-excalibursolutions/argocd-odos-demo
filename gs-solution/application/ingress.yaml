@@ -9,7 +9,7 @@ spec:
       paths:
       - backend:
           service: 
-            name: case-service-api
+            name: gs-service-api
             port:
               number: 8081
         pathType: ImplementationSpecific
