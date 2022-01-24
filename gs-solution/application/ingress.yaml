@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: gs-service-ingress
+spec:
+  rules:
+  - host: gs-solutions.com
+    http:
+      paths:
+      - backend:
+          service: 
+            name: case-service-api
+            port:
+              number: 8081
+        pathType: ImplementationSpecific
