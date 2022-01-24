@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: gs-service
-          image: dmitry4excalibursolutions/odos-gs:0.0.1
+          image: dmitry4excalibursolutions/odos-gs:0.0.2
           env:
             - name: PREFIX
               value: hola
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
               name: http
           resources:
             requests:
