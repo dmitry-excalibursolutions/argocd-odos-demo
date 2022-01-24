@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gs-service
+  namespace: gs
+spec:
+  replicas: 2
