@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: gs-service
-          image: dmitry4excalibursolutions/odos-gs:0.0.2
+          image: dmitry4excalibursolutions/odos-gs:0.0.3
           env:
             - name: PREFIX
               value: hola
