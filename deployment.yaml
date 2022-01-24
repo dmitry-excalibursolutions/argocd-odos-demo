@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gs-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gs-service
+  template:
+    metadata:
+      name: gs-service
+      labels:
+        app: gs-service
+        environment: develop
+    spec:
+      containers:
+        - name: gs-service
+          image: dmitry4excalibursolutions/odos-gs:0.0.1
+          env:
+            - name: PREFIX
+              value: hola
+          ports:
+            - containerPort: 8080
+              name: http
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "512Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
