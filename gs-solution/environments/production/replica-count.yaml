@@ -4,4 +4,4 @@ metadata:
   name: gs-service
   namespace: gs
 spec:
-  replicas: 2
+  replicas: 1
