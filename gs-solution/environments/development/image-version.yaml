@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: gs-service
 spec:
+  selector:
+    matchLabels:
+      app: gs-service
   template:
     spec:
       containers:
