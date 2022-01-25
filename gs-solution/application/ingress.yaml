@@ -12,3 +12,4 @@ spec:
             name: gs-service-api
             port:
               number: 8081
+        pathType: ImplementationSpecific
