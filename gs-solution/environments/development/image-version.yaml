@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gs-service
+spec:
+  template:
+    spec:
+      containers:
+        - name: gs-service
+          image: dmitry4excalibursolutions/odos-gs:0.0.2
